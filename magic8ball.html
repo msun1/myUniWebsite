@@ -1,0 +1,128 @@
+<!--MICHELLE SUN :)-->
+<!--this program is a magic 8 ball webpage that uses HTML5 and JavaScript--> 
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Magic 8 Ball</title>
+
+<!--adding a title bar icon-->
+<link rel = "icon" href =  
+"https://cdn.pixabay.com/photo/2017/02/01/00/32/butterfly-2028591__480.png" 
+type = "image/x-icon"> 
+	
+  <script type="text/javascript"> <!--NOTE: the javascript makes the code for the responses look blue-ish. ew.-->
+    var answers = ["Definately 😁", 
+                   "Probablyyy buuut I'm not sure", 
+				   "YES. 😊",
+                   "Without a doubt", 
+				   "umm...sure",
+                   "OMG YES OFC 😜",
+                   "obviously 😶", 
+                   "YUPPERS def",
+                   "~Most likely~",  
+                   "YASSS woohoo 🤩",
+                   "NOPE sorry 😪", 
+                   "yea not rly",
+                   "probs not lol", 
+                   "ew. heck no.",
+                   "sry kinda doubtful 😓", 
+                   "NO ANSWER 😎", 
+                   "solid NO 🥱", 
+                   "Better not tell you now ;)",
+                   "um this magic 8 ball went to sleep 🤪", 
+                   "no. justNo."];
+    
+    window.onload = function() {
+       var eight = document.getElementById("eight");
+       var answer = document.getElementById("answer");
+       var eightball = document.getElementById("eight-ball");
+       var question = document.getElementById("question");
+       
+       eightball.addEventListener("click", function() {
+         if (question.value.length < 1) {
+           alert('Enter a question!');
+         } else {
+           eight.innerText = "";
+           var num = Math.floor(Math.random() * Math.floor(answers.length));
+           answer.innerText = answers[num];
+         }
+       });
+    };
+  </script>
+    
+	
+  <style type="text/css">
+    h1 { font-weight: 100; font-size: 2.5em;}  
+    #content { 
+     width: 600px; 
+     margin: 0 auto; 
+     margin-top: 50px; 
+     text-align: center; 
+     font-family: 'Helvetica Neue', arial; 
+     font-weight: 100;
+   }
+    
+    div.eight-ball {
+      background-color: powderblue;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    
+    div.answer {
+      background-color: #D670FF  ;
+      border: 1px solid #333;
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      margin: 25% auto;
+    }
+    
+    p#eight {
+      font-size: 5em;
+      margin: 20% auto;
+      color: white;
+    }
+    
+    p#answer {
+      padding: 23px;
+      color: lightblue;
+      letter-spacing: 2px;
+      font-size:18px;
+    }
+    
+    #question {
+      margin: 20px;
+      padding: 10px;
+      width: 400px;
+      font-size:22px;
+    }
+    
+    #info {
+      font-size: 22px;
+    }
+    
+  </style>
+  
+ </head>
+ <body style = "background-color: pink; background-image: url('sunset.jpg'); background-size: cover;">
+ 
+  <div id="content">
+    <h1 style = "background: -webkit-linear-gradient(#FF40DF, #CD4FFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color:purple; font-family:'garamond'"><b>Michelle's Magic 8 Ball</b></h1>
+	
+    <p style = "color: blue; font-family:'garamond'" id="info"><i>Type in your question then click on the Magic 8 Ball</i> 🤩🤔</p>
+    <input type="text" id="question" />
+    <div id="eight-ball" class="eight-ball">
+      <div class="answer">
+        <p id="eight">8</p>
+        <p id="answer"></p>
+      </div>
+    </div>
+  </div>
+ </body>
+</html>

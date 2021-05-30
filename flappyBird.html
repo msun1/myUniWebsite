@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flappy Bird</title>
+	
+<script language="text/javascript">
+    // Starting with "Play" as the first button state
+    var playpause = true;
+</script>
+
+<style>
+body {
+   background-image: url("https://i.pinimg.com/originals/43/bd/05/43bd05281a65524696eeb251f0699e4f.png");
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;  font-family: Comic Sans MS;
+   margin: 0;
+   text-align: center;
+   color:#B70093;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+<button style = "background-color:powderblue; position:absolute; margin-left:300px; height: 40px; width:200px; margin-top:50px;" id="playpause" type="button" name="playButton" onclick="setPlayPause()">Pause</button>
+</div>
+
+	<h3>flappy bird :)</h3>
+	<canvas id="canvas" width="288" height="512"></canvas>
+	<script src = "flappyBird.js"></script>
+</body>
+
+</html>

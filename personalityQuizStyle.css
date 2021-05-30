@@ -1,0 +1,40 @@
+/* CSS files add styling rules to your content */
+
+* {
+  text-align: center;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-image:url("https://i.pinimg.com/originals/43/bd/05/43bd05281a65524696eeb251f0699e4f.png");
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;  font-family: Comic Sans MS;
+   margin: 0;
+   text-align: center;
+}
+
+h1 {
+  font-style: italic;
+  color:purple;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+.question {
+  display: flex;
+  margin-top: 2em;
+}
+
+.answer-choice img {
+  height: 10em;
+}
+
+.answer-choice {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

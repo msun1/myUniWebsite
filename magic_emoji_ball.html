@@ -1,0 +1,126 @@
+<!--MICHELLE SUN :)-->
+<!--this program is a magic EMOJI ball that uses HTML5 and JavaScript--> 
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>EMOJI Ball</title>
+
+<!--adding a title bar icon-->
+<link rel = "icon" href = "" 
+type = "image/x-icon"> 
+	
+  <script type="text/javascript"> <!--NOTE: the javascript makes the code for the responses look blue-ish. ew.-->
+    var answers = ["😁", 
+                   "🤣", 
+				   "😊",
+                   "🤗", 
+				   "😴",
+                   "😜",
+                   "😶", 
+                   "👻",
+                   "💖",  
+                   "🤩",
+                   "😪", 
+                   "🥳",
+                   "🧐", 
+                   "🤓",
+                   "😓", 
+                   "😎", 
+                   "🥱", 
+                   "🤡",
+                   "🤪", 
+                   "🤯"];
+    
+    window.onload = function() {
+       var eight = document.getElementById("eight");
+       var answer = document.getElementById("answer");
+       var eightball = document.getElementById("eight-ball");
+       var question = document.getElementById("question");
+       
+       eightball.addEventListener("click", function() {
+         if (question.value.length < 1) {
+           alert('Enter your current emtion!');
+         } else {
+           eight.innerText = "";
+           var num = Math.floor(Math.random() * Math.floor(answers.length));
+           answer.innerText = answers[num];
+         }
+       });
+    };
+  </script>
+    
+	
+  <style type="text/css">
+    h1 { font-weight: 100; font-size: 2.5em;}  
+    #content { 
+     width: 600px; 
+     margin: 0 auto; 
+     margin-top: 50px; 
+     border: 1px dotted powderblue;       
+     text-align: center; 
+     font-family: 'Helvetica Neue', arial; 
+     font-weight: 100;
+   }
+    
+    div.eight-ball {
+      background-color: powderblue;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    
+    div.answer {
+      background-color: pink;
+      border: 1px solid pink;
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      margin: 25% auto;
+    }
+    
+    p#eight {
+      font-size: 5em;
+      margin: 20% auto;
+      color: white;
+    }
+    
+    p#answer {
+      padding: 15px;
+      font-size: 50px;
+    }
+    
+    #question {
+      margin: 20px;
+      padding: 10px;
+      width: 400px;
+      font-size:22px;
+    }
+    
+    #info {
+      font-size: 22px;
+    }
+    
+  </style>
+  
+ </head>
+ <body style = "background-color: pink; background-image: url('pretty_sunrise.jpeg'); background-size: cover;">
+ 
+  <div id="content">
+    <h1 style = "color: purple; font-family: 'garamond'"> <b> Michelle's Magic EMOJI ball </b> 😍</h1>
+	
+    <p style = "color: blue; font-family:'garamond'" id="info"><i>Type in your current emotion then click on the Magic EMOJI Ball</i></p>
+    <input type="text" id="question" />
+    <div id="eight-ball" class="eight-ball">
+      <div class="answer">
+        <p id="eight">💛</p>
+        <p id="answer"></p>
+      </div>
+    </div>
+  </div>
+ </body>
+</html>

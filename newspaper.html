@@ -1,0 +1,678 @@
+<!--
+Created By: Michelle Sun
+Last Updated: 5/22/21
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <!--The code above has all the font code ~(￣▽￣)~*-->
+	<link rel = "icon" href = "https://purepng.com/public/uploads/large/s-letter-axp.png" type = "image/x-icon"> 
+	<title>The SUNN Times</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset = "UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<style>
+body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.head{
+    text-align: center;
+    position: relative;
+}
+
+.headerobjectswrapper{
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+}
+
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+}
+.collumns{
+}
+
+.collumn{
+    font-size: 14px;
+    line-height: 20px;
+    width: 31%; /*---------------------This is what changes the column widths! ♪(^∇^*)*/
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+}
+.collumn + .collumn { 
+  border-left: 1px solid #2f2f2f;
+}
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+
+
+}
+.collumn .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+}
+
+.collumn .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.collumn .headline.hl2:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+.collumn .headline.hl7{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl8{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl9{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl10{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .citation{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+}
+.collumn .citation:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .citation:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .figure {
+	  margin: 0 0 20px;
+}
+.collumn .figcaption{
+	font-style: italic;
+	font-size: 12px;
+}
+.media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+
+@media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+        display: none;
+    }
+
+}
+@media only all and (max-width: 1200px) {
+    .collumn{
+        width: 31%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .collumn{
+        width: 47%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .collumn{
+        width: 100%;
+    }
+	.collumn + .collumn {
+		border-left: none;
+      	border-bottom: 1px solid #2f2f2f;
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+}
+
+
+/*-----ヾ(≧▽≦*)o------*/
+section{
+	column-count: 3;
+	column-gap: 2em;
+	line-height: 30px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.letter{
+	font-family: 'Parisienne', cursive;
+	font-size: 45px;
+}
+
+.buzz{
+	font-size: 14px;
+    line-height: 20px;
+    width: 70%;
+    display: inline-block;
+    padding: 0 10% 0 10%;
+    vertical-align: top;
+    margin-bottom: 50px;
+}
+
+/*SLIDESHOW CODE*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+        <br><br>
+		<header>The SUNN Times</header>
+    </div>
+
+    <div class="subhead">Dunlap, IL - Sunday May 23, 2021 - Four Pages</div>
+</div>
+
+<br>
+<br>
+<br>
+<!--<h1 style = "text-align: center;">HELLO</h1>-->			
+<section>
+	<p>	<span class = "letter"><b>D</b></span>
+uring these difficult times,
+nobody knows what
+the future looks like, or even how 
+the journey of getting there will become. 
+For some people, days pass like lightening, but for others, quarantine would seem as a never-ending trek in a dark, cold tunnel.
+In the coronavirus
+crisis, everyone must share the
+same feelings: hope and
+perseverance. It’s not easy to
+be contained in a house for months and months, especially
+when loneliness begins to creep over. 
+Whether you're with your friends and family or missing them, 
+the team here at SUNN Times is dedicated
+to help you overcome the duration of the lockdown. We gather information ranging from breaking news and updates to casual lifestyle tips about
+health, aesthetics, and more. 
+and organize them into columns for your convenience.
+Our goal is to
+spread local and national news to
+citizens through virtual means, and it could defiately
+brighten some tough days.</p>
+	<figure class = "figure">
+		<img class = "media" src = "https://storage.googleapis.com/afs-prod/media/media:6ca4c6d1ac81433191989939b4131e03/2000.jpeg">
+	</figure>
+<p>
+Keep reading for some
+fascinating and debatable
+topics regarding COVID-19.
+</p>
+
+</section>
+
+<img style = "margin-left:500px; width: 20%; height: auto;" src = "https://freepikpsd.com/wp-content/uploads/2019/11/decorative-lines-png-5-Images.png">
+
+<div class="content">
+    <div class="collumns">        
+		<div class="collumn">			
+            <div class="head"><span class="headline hl3" style = "font-size: 25px;">CHILDREN IN CORONAVIRUS LOCKDOWN DRAW WHAT THEY MISS MOST</span><p><span style = "font-size: 15px;" class="headline hl4">Breaking News</span></p></div>
+
+<p style = "text-align:center;"><i>"I miss playing football with
+my friends."</i></p>
+<p>
+Having nothing much to do,
+children quarantined at home
+from the coronavirus
+pandemic are drawing what
+they miss the most: friends at
+school, grandparents, football,
+open spaces, and more.
+However, research shows that
+many children are drawing the
+same ideas over and over
+again. Ranging from Tokyo to
+Buenos Aires to New York,
+young kids have taken their art
+pieces to their balconies or
+front lawns for Reuters
+photographers.
+<figure class = "figure">
+	<img class = "media" src = "https://s.abcnews.com/images/GMA/lockdown-drawings-01-rt-jef-200423_hpEmbed_7x5_992.jpg">
+	<figcaption class = "figcaption">
+		Reku Matsui, 8, and Yaya Matsui, 12, pose for a picture 
+		while holding their drawings on the balcony of their home 
+		in Tokyo, April 19, 2020. "I miss being with my grandmother 
+		and my grandfather," 
+		said Reku, who drew a picture of himself standing with his grandparents. 
+		Yaya, who drew a picture of herself and a 
+		friend said "what I want to do the most right now is hang out 
+		with my friends."</figcaption>
+</figure>
+Moreover, in the German town
+of Bad Honnef, a six-year-old
+boy named Tom [above] said,
+"I have painted a picture of the
+house of grandma and
+grandpa, because I miss them
+so much." Aside from the wish
+for seeing familiar people,
+children are also emphasizing
+the sports they miss.
+</p>
+<figure class = "figure">
+	<img class = "media" src = "https://s.abcnews.com/images/GMA/lockdown-drawings-03-rt-jef-200423_hpEmbed_3x2_992.jpg">
+	<figcaption class = "figcaption">
+		Ivan Posta, 8, Vince Posta, 11, and Vilma Posta, display their drawings 
+		while standing on the balcony at their home in Budapest, Hungary, on April 10, 2020. 
+		Ivan drew a soccer ball, "because, I like to play football with friends." Vince 
+		also drew a soccer ball "because we can't play football in the garden as there are 
+		trees and bushes everywhere." Vilma drew her friends and said she missed her friends 
+		the most.
+	</figcaption>
+</figure>
+		
+</div>
+        <div class="collumn">
+            <div class="head"><span class="headline hl5" style = "font-size: 33px;">The significance of greenhouse gas</span><p><span class="headline hl6">The Future of Earth is in Our Hands</span></p></div>
+<p>Greenhouse gas emissions, which is one of the main factors 
+in climate change, is considered to be a highly severe issue, 
+and it has affected countries all over the world, including Canada. 
+From 1990 to 2018, greenhouse gas emissions in Canada increased by 
+20.9% due to transport, mining, gas production, and upstream oil. 
+However, the intensity of GHGs, measured in tonnes of carbon dioxide, 
+went down by 10%. In fact, a majority of electricity in Canada non-GHG 
+emitting sources during 2018. Between 1990 and 2017, energy efficiency 
+improved but so did energy consumption. </p>
+			<figure class="figure">
+				<img class="media" src="http://www.coe.int/documents/16695/61254353/CM-news-2020-environment.jpg/43cb91a9-4fbb-b1c9-0391-d838d7f07d9b">
+				<figcaption class="figcaption">Climate Change is a serious issue</figcaption>
+			</figure>
+<p>If greenhouse gas emissions continue to increase, it will likely 
+affect the health of Canadian citizens and the economy of Canada. 
+The increasing temperatures from greenhouse gas emissions will have
+ multiple repercussions such as rising sea levels and risk of death 
+ by heatstroke. To prevent climate change caused by greenhouse gases, 
+ renewable resources should replace fossil fuels.</p>
+ 
+ <br>
+ <p>Although many people do not realize it, greenhouse gases 
+ are actually vital to human life on Earth, and they are the 
+ reason why we are able to not be overheated by the sun when 
+ going out for a walk or become frozen when we visit our friends 
+ and family outside. In other words, GHGs maintain conditions 
+ that make life possible on Earth mainly because it keeps some 
+ of Earth’s heat and energy, so it does not escape into space 
+ or the atmosphere. This process of trapping heat is known as 
+ the greenhouse effect. If there is too little greenhouse gas, 
+ then the Earth would become extremely cold. On the other hand, 
+ if there is too much GHG, then the planet that we call home 
+ would become an uninhabitable land of heat. Consequently, 
+ this is why maintaining the perfect balance between carbon, 
+ nitrogen, oxygen, and hydrogen atoms are so important. </p>
+            </div>
+        <div class="collumn"><div class="head"><span style = "font-size:25px;"class="headline hl1">ILLINOIS OFFICIALS SAY
+THE STATE IS AT
+ITS COVID-19 PEAK ---
+AND THAT’S ACTUALLY
+GOOD NEWS</span><p><span style = "font-size:20px;" class="headline hl2">Now is not the time to lose hope.</span></p></div>When people say that the cases of COVID has hit the highest it's ever been in the past few months, it would be plausible to believe that it would be bad news. However, it's actually news that can save lives.</p>
+	<figure class="figure">
+								<img class="media" src="https://www.chicagotribune.com/resizer/PsCH1SaFY0FOEovdfroTlQVTT6k=/800x697/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/ZZERTJ5OFNB3RBXGKTSN54A6TA.png">
+								<figcaption class="figcaption">Source: IDPH, Gov. J.B. Prizker's Office. (Chicago Tribune)</figcaption>
+						</figure>
+            <p>Illinois officials have stated for
+				weeks that the state has been
+				“bending the curve” on the
+				COVID-19 rate of growth.
+				Based on the research shared
+				Thursday, April 23rd, the
+				leaders say that they think
+				Illinois is coming to its peak.
+				Some models suggest that
+				COVID-19 deaths in Illinois
+				have already peaked
+				(University of Illinois). Others,
+				however, project a peak
+				arriving on May 6 (University
+				of Chicago).
+				Peak or plateau?
+				Many people including the
+				governor, Chicago’s mayor,
+				and other public health
+				officials have reported that the
+				peak is more like a plateau. On
+				Thursday, as mentioned above,
+				the charts were revealed, and
+				Pritzker emphasized how there
+				was such a large variation in
+				the deaths.
+			<span class="citation">"Reality swings up
+				and down, sometimes
+				drastically — a fact that can’t
+				be captured by a simple
+				median line."</span> 
+			</p>
+</div>
+
+<!--SLIDESHOW CODE-->
+<div class="slideshow-container" style = "position:absolute; margin-left:20px; width:500px;">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://www.lutheranworld.org/sites/default/files/styles/news_item/public/event-climate-change-human-rights.jpg?itok=A0ShneZj" style="width:100%">
+  <div class="text"><!-----------------------------------------></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://c402277.ssl.cf1.rackcdn.com/photos/13884/images/story_full_width/wide_angle_rev-102.jpg?1496679050" style="width:100%">
+  <div class="text"><!-----------------------------------------></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://c402277.ssl.cf1.rackcdn.com/photos/673/images/story_full_width/Untitled-1.jpg?1345576162" style="width:100%">
+  <div class="text"><!-----------------------------------------></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+<br>
+<!--VIDEO CODE-->
+<iframe style = "position:abolsute; margin-left:700px; width: 400px; height: 300px;" src="https://www.youtube.com/embed/0XTBYMfZyrM">
+</iframe>
+
+<!--NOTE FROM TEAM-->		
+<img style = "margin-top:100px; margin-left: 200px; width:300px" src = "https://cdn.glitch.com/7e3ab1a1-617a-4b6a-9b32-a6aef4d68913%2Fswirl-pic2%20(2).png?v=1597336098624" alt = "border">
+<img style = "margin-left: 50px; width:70px; height:150px" src = "https://cdn.glitch.com/7e3ab1a1-617a-4b6a-9b32-a6aef4d68913%2Fbook-gif(2).gif?v=1597335526079">
+<img style = "margin-left: 60px; width:300px" src = "https://cdn.glitch.com/7e3ab1a1-617a-4b6a-9b32-a6aef4d68913%2Fswirl-pic2.png?v=1597336101973">
+		<div class="buzz">
+		<div class="head">
+		<span style = "margin-left:130px;" class="letter">The Rustle of this little world </span><p>
+		<br>
+		<br>
+		<span style = "margin-left:100px;" class="headline hl4"><i>A note from the SUNN team~</i></span></p>
+		</div>
+		<p style = "margin-left:100px;">“Unprecedented” is a word that we’ve 
+		heard just about everywhere starting from 2020. During this time, 
+		we, the writers of The SUNN Times, believe that it’s 
+		crucial to understand the importance 
+		of educating and taking care of yourself. Whether it’s 
+		playing video games to studying the next set of SAT books, 
+		we always have your back. If you or anyone you know enjoy reading 
+		newspapers articles about breaking news, lifestyles, or opinions, 
+		then The SUNN Times might just be your source of sunlight in this cloudy year. </p>
+		</div>
+</div>
+
+</body>
+</html>

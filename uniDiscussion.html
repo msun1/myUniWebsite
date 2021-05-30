@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!--Michelle Sun. JamHacks 5/22/21-->
+
+<html>
+<head>
+<title>My Uni</title>
+
+<!--Put a favicon-->
+<link rel = "icon" href = "https://iconarchive.com/download/i107338/google/noto-emoji-animals-nature/22228-unicorn-face.ico" type = "image/x-icon"> 
+
+<style>
+/*Universal selector*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+   background-image: url("https://i.pinimg.com/originals/43/bd/05/43bd05281a65524696eeb251f0699e4f.png");
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;  font-family: Comic Sans MS;
+   margin: 0;
+   text-align: center;
+   color:#B70093;
+}
+
+/*Style the top navigation bar*/
+.navbar {
+  overflow: hidden;
+  background-color: #FFC9E8;
+}	
+.navbar a {
+	  float: left;
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 20px;
+	  text-decoration: none;
+	  transition: all 0.5s;
+	}
+	
+
+/*The header image/color*/
+.header {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-smoke-bb-5_1.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=d614dd217c4d5a85597a2697ffe23b70");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+/*Font style of the heading text*/
+.header h1 {
+  font-family: fantasy;
+  font-size: 40px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!--this is the text that goes in the header-->
+<div class="header">
+  <h1 style = "background: -webkit-linear-gradient(#FF40DF, #CD4FFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color:purple; font-family:'garamond'">My Uni 🦄</h1>
+</div>
+
+<!--This is my navigation bar-->
+<div class="navbar">
+  <a href="myUni.html" class="logo">HOME</a>
+  <a href = "gamesUni.html">Games</a>
+  <a href = "uniHelper.html">Uni Helper</a>
+  <a href = "uniResources.html">Resources</a>
+  <a href = "uniDiscussion.html"> Discussion Board! </a>
+</div>
+
+<h1>DISCUSSION BOARD 💖</h1>
+
+<img style = "width:100px;" src = "https://cdn4.iconfinder.com/data/icons/small-n-flat/24/bubbles-512.png">
+<div style = "background-color:powderblue; width:700px; text-align:center; margin:auto;">
+	<p>
+	Welcome to the discussion board! This is a place where students can post any positive comments about their friends or peers thoroughout the day if they would like. 
+	Especially during virtual learning, this method would help staff and students to connect on a much personal level, and the best aspect
+	about this board is that it's school-wide! Of course, people also have the option to stay anonymous if they want to. Overall, it's just
+	a cool system to help bring the learning atmosphere to a higher and peppier level! :)
+	</p>
+</div>
+
+<br><br>
+<br><br>
+
+<h4>MAY 10th, 2021</h4>
+<div style = "position:relative; width:400px;">
+	<img style = "margin-left:230px; margin-top:50px; height:270px; width:200px;" src = "https://www.pinclipart.com/picdir/big/354-3541445_transparent-speech-bubble-png-icon-clipart.png">
+	<p style = "position:absolute; top:50%; left:80%; transform:translate(-50%, -50%);">"Mary was so nice today! I loved her dress." <br> - Martha</p>
+</div>
+
+<h4>MAY 21st, 2021</h4>
+<div style = "margin-right:600px; position:relative; width:400px;">
+	<img style = "margin-left:230px; margin-top:50px; height:270px; width:200px;" src = "https://www.pinclipart.com/picdir/big/354-3541445_transparent-speech-bubble-png-icon-clipart.png">
+	<p style = "position:absolute; top:50%; left:80%; transform:translate(-50%, -50%);">"Lucas did great in his soccer game! So proud" <br> - Dr. T</p>
+</div>
+
+<br><br><br>
+<br><br><br>
+
+<div style = "background-color: powderblue;">
+<h3>Submit your message here to make someone's day better :)</h3>
+	<form action = "uniDiscussion.html">
+	  <label for="fname">First name:</label><br>
+	  <input type="text" id="fname" name="fname" value=""><br>
+	 
+	 <label for="lname">Last name:</label><br>
+	  <input type="text" id="lname" name="lname" value=""><br>
+	  	 
+      <label for="messageText">Message:</label><br>
+	  <textarea style = "width:500px; height:150px;"></textarea>
+	  <br><br>
+	  <input type="submit" value="Submit">
+	</form>
+</div>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>
